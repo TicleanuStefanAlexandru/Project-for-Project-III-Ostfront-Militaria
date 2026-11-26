@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell / Consign Artifact - Ostfront Militaria</title>
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/headerStyle.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="form-container">
+        <h1>Consign / List Militaria Artifact</h1>
+        <p>Submit your historical artifact or collection for sale on Ostfront Militaria.</p>
+
+        <form id="item-upload-form">
+            <div class="input-group">
+                <label for="item-name">Item Name, Origin & Era</label>
+                <input type="text" id="item-name" placeholder="e.g. M40 Steel Helmet / Panzer Tank Part" required>
+            </div>
+
+            <div class="input-group">
+                <label for="item-price">Listing Price ($)</label>
+                <input type="number" id="item-price" placeholder="5000000" required>
+            </div>
+
+            <div class="input-group">
+                <label for="item-desc">Description & Provenance</label>
+                <textarea id="item-desc" rows="5" placeholder="Describe the historical item, provenance documents, and condition." required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="item-image">Upload Photo</label>
+                <input type="file" id="item-image" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Listing</button>
+        </form>
+    </main>
+
+    <script src="js/header.js"></script>
+</body>
+</html>

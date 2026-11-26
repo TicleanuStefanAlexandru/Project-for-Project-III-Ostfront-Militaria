@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('../assets/images/ostfrontLogo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    background: white;
+    width: 450px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+.auth-logo-bg {
+    background-color: #1a1a1a;
+    margin: -40px -40px 30px -40px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.auth-logo-bg img {
+    height: 90px;
+    width: auto;
+}
+
+.auth-tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.tab {
+    flex: 1; 
+    text-align: center;
+    padding: 0;
+}
+
+.tab a {
+    display: block;      
+    padding: 15px;      
+    text-decoration: none; 
+    color: #666;
+    font-weight: bold;
+    width: 100%;
+    transition: color 0.2s;
+} 
+
+.tab.active {
+    border-bottom: 3px solid #2e3a31;
+}
+
+.tab.active a {
+    color: #1a1a1a; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    background: #f2f4f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2e3a31;
+    background: #fff;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #1a1a1a; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2e3a31;
+}
